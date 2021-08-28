@@ -1,14 +1,14 @@
 name: Deploy to AKS
-
+# Deploy to Azure Kubernetes Service
 env:
   k8sclustername: kubeaks
   resourceGroupName: testkube
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
