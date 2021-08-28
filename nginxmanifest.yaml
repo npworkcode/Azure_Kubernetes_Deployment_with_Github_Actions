@@ -22,6 +22,7 @@ jobs:
         cluster-name: '${{ env.k8sclustername }}'
         resource-group: '${{ env.resourceGroupName }}'
 
+# deploy to Azure Kubernetes cluster
     - uses: Azure/k8s-deploy@v1
       with:
         manifests: |
